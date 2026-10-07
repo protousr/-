@@ -769,7 +769,7 @@ do
 		["Color"] = menu["colors"]["accent"],
 		["Text"] = getgenv().script_version or "live",
 		["Parent"] = inside,
-		["Position"] = udim2_new(0, 15, 0, 19),
+		["Position"] = udim2_new(0, 15, 0, 28),
 		["Size"] = 14,
 		["Visible"] = true,
 		["Transparency"] = 1,
