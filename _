@@ -4011,7 +4011,6 @@ do
 
 		tween(frame, transparency, exponential, out, 0.18)
 		tween(inside, transparency, exponential, out, 0.18)
-		tween(logo, transparency, exponential, out, 0.18)
 		tween(juju_text, transparency, exponential, out, 0.18)
 		tween(build_text, transparency, exponential, out, 0.18)
 		tween(right_side, transparency, exponential, out, 0.18)
