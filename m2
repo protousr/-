@@ -670,7 +670,7 @@ do
                 tween.value_current = tween.value_start:lerp(tween.value_new, tween.progress_tween)
             end
             
-            if object == nil or object.__REMOVED or (utility.table.includes(object, '_object') and (type(object._object) == 'table' and not rawget(object._object, '__OBJECT_EXISTS'))) then
+            if utility.table.includes(object, '_object') and (type(object._object) == 'table' and not rawget(object._object, '__OBJECT_EXISTS') == true) then
                 tween.connection:Disconnect()
                 tween.Completed:Fire()
                 return
@@ -2110,7 +2110,6 @@ do
         end
 
         function drawing:Remove()
-            self.__REMOVED = true
 
             if (type(drawing._object) == 'table' and rawget(drawing._object, '__OBJECT_EXISTS')) or typeof(drawing._object) == 'userdata' then
                 pcall(function()
